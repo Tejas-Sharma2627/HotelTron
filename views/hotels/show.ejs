@@ -1,0 +1,40 @@
+<%layout('../layouts/boilerplate') %>
+<div class="row">
+  <div class="col-6 offset-3">
+    <div class="card mb-3">
+      <img src="<%=result.image %> " class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title"><%=result.name %></h5>
+        <p class="card-text"><%= result.descr %></p>
+      </div>
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item text-muted"><%=result.location %></li>
+        <li class="list-group-item">Rs.<%=result.price %>/night</li>
+      </ul>
+      <div class="card-body">
+        <a
+          href="/allHotels/<%=result._id %>/edit "
+          class="card-link btn btn-warning"
+          >Edit Hotel</a
+        >
+        <form class="d-inline" action="/allHotels/<%=result.id %>?_method=DELETE " method="POST">
+          <button class="btn btn-danger">Delete Hotel</button>
+        </form>
+      </div>
+      <div class="card-footer text-muted">
+          <a href="/allHotels">View All Hotels</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <h1>DETAILS</h1>
+<h1><%=result.name%></h1>
+<h2><%=result.location %></h2>
+<img src="<%=result.image %> " alt="" />
+<h3><%=result.price %></h3>
+<p><%=result.descr %></p>
+<form action="/allHotels/<%=result.id %>?_method=DELETE " method="POST">
+  <button>Delete Entry</button>
+</form>
+<a href="/allHotels">Back to Index</a>
+<p><a href="/allHotels/<%=result._id %>/edit">EDIT INFO</a></p> -->

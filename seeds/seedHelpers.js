@@ -1,0 +1,45 @@
+module.exports.descriptors = [
+    'Hotel',
+    'Crowne',
+    'The New',
+    'Emerald',
+    'Beacon',
+    'Lake',
+    'The Fresco',
+    'Holly',
+    'Four',
+    'Budget',
+    'Misty',
+    'Elk',
+    'Spirit',
+    'Hotel',
+    'Sea',
+    'Sky',
+    'Cape',
+    'Wonder Hill'
+]
+
+module.exports.places = [
+    'Bliss',
+    'Plaza',
+    'View',
+    'Bay Inn',
+    'Motel',
+    'Palace',
+    'House',
+    'Seasons',
+    'Suites',
+    'Brook',
+    'River',
+    'India',
+    'CVitals',
+    'Inn',
+    'Spring',
+    'Bayshore',
+    'Sands',
+    'Grace',
+    'Hunting Camp',
+    'Cliffs',
+    'Hollow'
+]
+
